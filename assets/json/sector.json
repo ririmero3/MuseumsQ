@@ -1,0 +1,14 @@
+[
+    {
+        "nombre": "NORTE",
+        "imagen": "assets/images/norte.jpeg"
+    },
+    {
+        "nombre": "CENTRO",
+        "imagen": "assets/images/centro.jpeg"
+    },
+    {
+        "nombre": "SUR",
+        "imagen": "assets/images/sur.jpeg"
+    }
+]
