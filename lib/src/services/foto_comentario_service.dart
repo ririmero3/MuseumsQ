@@ -26,7 +26,8 @@ class FotocomentarioService {
       print("paso3 ");
       Map<String, dynamic> content = json.decode(response.body);
       print("paso4 ");
-      return content["nombre"];
+      return content["Estado"];
+
     } catch (ex) {
       developer.log("Error $ex");
       return 500;
