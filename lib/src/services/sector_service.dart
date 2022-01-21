@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:developer' as developer;
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:museumsq/src/models/sector_model.dart';
 
@@ -18,8 +19,7 @@ class SectorService {
       print(result);
       return result;
     } catch (ex) {
-      // ignore: avoid_print
-      print(ex);
+      developer.log("Error $ex");
       return result;
     }
   }

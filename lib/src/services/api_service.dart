@@ -1,5 +1,3 @@
-// ignore_for_file: unused_local_variable
-
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:museumsq/src/models/museos_model.dart';

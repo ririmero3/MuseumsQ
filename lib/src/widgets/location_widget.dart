@@ -10,7 +10,7 @@ class LocationWidget extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const Icon(Icons.location_on, size: 50.0),
-          Text('Locación', style: Theme.of(context).textTheme.headline4)
+          Text('Ubicación GPS', style: Theme.of(context).textTheme.headline4)
         ],
       ),
     );

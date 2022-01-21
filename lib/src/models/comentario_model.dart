@@ -17,21 +17,23 @@ class Comentario {
   String? idUser;
   String? foto;
   String? comentario;
-  DateTime? fechaPublicacion;
+  String? fechaPublicacion;
 
   factory Comentario.fromJson(Map<String, dynamic> json) => Comentario(
         idmuseo: json["id_museo"],
         idUser: json["id_User"],
         foto: json["foto"],
         comentario: json["comentario"],
-        fechaPublicacion: DateTime.parse(json["fechaPublicacion"]),
+        fechaPublicacion: json["fechaPublicacion"],
       );
+
+  factory Comentario.created(String id) => Comentario(idmuseo: id);
 
   Map<String, dynamic> toJson() => {
         "id_museo": idmuseo,
         "id_User": idUser,
         "foto": foto,
         "comentario": comentario,
-        "fechaPublicacion": fechaPublicacion!.toIso8601String(),
+        "fechaPublicacion": fechaPublicacion,
       };
 }
